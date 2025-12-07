@@ -13,7 +13,7 @@ void setup()
   pinMode(pin3, OUTPUT);
   pinMode(pin4, OUTPUT);
 }
-
+// Riyaj incoming
 void loop(){
 for (int i = 0; i < 32; ++i) {
    
