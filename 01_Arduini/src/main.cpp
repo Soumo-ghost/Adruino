@@ -12,6 +12,7 @@ void updateMasterLEDs(int patternValue) {
   digitalWrite(LED_PINS[1], (patternValue & 0b010)); 
   digitalWrite(LED_PINS[2], (patternValue & 0b100)); 
 }
+<<<<<<< HEAD
 
 void sendCommandToSlave(int step) {
   Wire.beginTransmission(SLAVE_ADDRESS);
@@ -56,3 +57,17 @@ void loop() {
   
   currentStep = (currentStep + 1) % NUM_STEPS;
 }
+=======
+// Riyaj incoming
+void loop(){
+for (int i = 0; i < 32; ++i) {
+   
+    digitalWrite(pin0, i & 1); 
+    digitalWrite(pin1, (i >> 1) & 1);
+    digitalWrite(pin2, (i >> 2) & 1);
+    digitalWrite(pin3, (i >> 3) & 1); 
+	digitalWrite(pin4, (i >> 4) & 1); 
+  delay(1000);
+}
+}
+>>>>>>> 41424ada492dca090805432244a3f5f70c15cd03
