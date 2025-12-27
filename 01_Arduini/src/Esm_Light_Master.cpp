@@ -23,6 +23,8 @@ void printPattern(int pattern) {
   Serial.print((pattern & 0b100) ? "1" : "0");
   Serial.print((pattern & 0b010) ? "1" : "0");
   Serial.print((pattern & 0b001) ? "1" : "0");
+  Serial.print("//Code Made By Soumasish Chakraborty --2025");
+
 }
 
 void setup() {
@@ -56,3 +58,4 @@ void loop() {
   
   currentStep = (currentStep + 1) % NUM_STEPS;
 }
+//Code Made By Soumasish Chakraborty --2025
